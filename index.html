@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Survey</h1>
+    <div class="container">
+        
+        <form action="./successfulPage.html">
+           <div class="firstName_lastname">
+             
+                   <div class="para">
+                    <p>Name<span class="require">*</span></p>
+                   </div>
+
+                   <div class="firstName_div">
+                    <input type="text" id="firstName" name="name" required>
+                    <label for="firstName">First</label>
+                   </div>
+               
+                <div class="lastName_div">
+                    <input type="text" id="lastName" name="name" required>
+                <label for="lastName">Last</label>
+                </div>
+                
+            </div>
+                
+           <div class="email_div">
+            <p>Email <span class="require" >*</span></p>
+            <input type="email" required>
+           </div >
+           <p class="starExp">Your Experience <span class="require">*</span></p>
+           <div class="star-rating">
+
+            <input type="radio" name="rating" value="1" required au><i></i>
+
+            <input type="radio" name="rating" value="2" required><i></i>
+            
+            <input type="radio" name="rating" value="3" required><i></i>
+
+            <input type="radio" name="rating" value="4" required><i></i>
+
+            <input type="radio" name="rating" value="5" required><i></i>
+           </div>
+           <div>
+                <div class="ratingPara">
+                    <p>How satisfied are you with <span class="require">*</span></p>
+               </div>
+               <div class="firstRating">
+                <table>
+                    
+                    <tr class="ratingHead">
+                        <td></td>
+                        <th>Very Unsatisfied</th>
+                        <th>Unsatisfied</th>
+                        <th>Neutral</th>
+                        <th>Satisfied</th>
+                        <th>Very Satisfied</th>
+                    </tr>
+                    <tr>
+                        <th>Purchase</th>
+                        <td><input type="radio" name="Purchase" value="Very_Unsatisfied" required>
+
+                            <input type="radio" name="Purchase" value="Default" required checked class="Default">
+
+                        </td>
+                        <td><input type="radio" name="Purchase" value="Unsatisfied" required></td>
+                        <td><input type="radio" name="Purchase" value="Neutral" required></td>
+                        <td><input type="radio" name="Purchase" value="Satisfied" required></td>
+                        <td><input type="radio" name="Purchase" value="Very_satisfied" required></td>
+                    </tr>
+                    <tr>
+                        <th>Service</th>
+                        <td><input type="radio" name="Service" value="Very_Unsatisfied" required>
+                        
+                            <input type="radio" name="Service" value="Default" required checked class="Default">
+                        </td>
+                        <td><input type="radio" name="Service" value="Unsatisfied" required></td>
+                        <td><input type="radio" name="Service" value="Neutral" required></td>
+                        <td><input type="radio" name="Service" value="Satisfied" required></td>
+                        <td><input type="radio" name="Service" value="Very_Satisfied" required></td>
+                    </tr>
+                    <tr>
+                        <th>Company Overall</th>
+                        <td><input type="radio" name="Company_Overall" value="Very_Unsatisfied" required>
+                            <input type="radio" name="Company_Overall" value="Default" required checked class="Default">
+                        </td>
+                        <td><input type="radio" name="Company_Overall" value="Unsatisfied" required></td>
+                        <td><input type="radio" name="Company_Overall" value="Neutral" required></td>
+                        <td><input type="radio" name="Company_Overall" value="satisfied" required></td>
+                        <td><input type="radio" name="Company_Overall" value="Very_Satisfied" required></td>
+                    </tr>
+                </table>
+               </div>
+
+               <!--  -->
+               <div class="firstRating_select">
+                <div >
+                    <label for="Purchase" >Purchase</label>
+                    <select name="Purchase" id="Purchase">
+                        <option value="Default">Select your ratings</option>
+                        <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                        <option value="Unsatisfied">Unsatisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Very_Satisfied">Very Satisfied</option>
+                    </select>
+                   </div>
+    
+                   <div>
+                    <label for="Service" >Service</label>
+                    <select name="Service" id="Service">
+                        <option value="Default">Select your ratings</option>
+                        <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                        <option value="Unsatisfied">Unsatisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Very_Satisfied">Very Satisfied</option>
+                    </select>
+                   </div>
+    
+                   <div>
+                    <label for="Company_Overall" >Company Overall</label>
+                    <select name="Company_Overall" id="Company_Overall">
+                        <option value="Default">Select your ratings</option>
+                        <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                        <option value="Unsatisfied">Unsatisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Very_Satisfied">Very Satisfied</option>
+                    </select>
+                   </div>
+
+               </div>
+               
+
+           </div>
+
+
+           <div>
+            <div class="ratingPara">
+                <p>How likely are you to <span class="require">*</span></p>
+           </div>
+           <div class="secondRating">
+            <table>
+                
+                <tr class="ratingHead">
+                    <td></td>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+                <tr>
+                    <th>Buy from us again</th>
+                    <td><input type="radio" name="BuyAgain" value="Very_Unsatisfied" required>
+                        <input type="radio" name="BuyAgain" value="Default" required checked class="Default">
+                    </td>
+                    <td><input type="radio" name="BuyAgain" value=" Unsatisfied" required></td>
+                    <td><input type="radio" name="BuyAgain" value="Neutral" required></td>
+                    <td><input type="radio" name="BuyAgain" value="Satisfied" required></td>
+                    <td><input type="radio" name="BuyAgain" value="Very satisfied" required></td>
+                </tr>
+                <tr>
+                    <th>Recommend our product to others</th>
+                    <td><input type="radio" name="Recommend_product" value="Very_Unsatisfied" required>
+                        <input type="radio" name="Recommend_product" value="Default" required checked class="Default">
+                    </td>
+                    <td><input type="radio" name="Recommend_product" value="Unsatisfied" required></td>
+                    <td><input type="radio" name="Recommend_product" value="Neutral" required></td>
+                    <td><input type="radio" name="Recommend_product" value="Satisfied" required></td>
+                    <td><input type="radio" name="Recommend_product" value="Very_Satisfied" required></td>
+                </tr>
+                <tr>
+                    <th>Recommend our company to others</th>
+                    <td><input type="radio" name="Recommend_company" value="Very_Unsatisfied" required>
+                        <input type="radio" name="Recommend_company" value="Default" required checked class="Default">
+                    </td>
+                    <td><input type="radio" name="Recommend_company" value="Unsatisfied" required></td>
+                    <td><input type="radio" name="Recommend_company" value="Neutral" required></td>
+                    <td><input type="radio" name="Recommend_company" value="satisfied" required></td>
+                    <td><input type="radio" name="Recommend_company" value="Very_Satisfied" required></td>
+                </tr>
+            </table>
+           </div>
+           <!--  -->
+
+           <div class="secondRating_select">
+            <div >
+                <label for="BuyAgain" >Buy from us again</label>
+                <select name="BuyAgain" id="BuyAgain">
+                    <option value="Default">Select your ratings</option>
+                    <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                    <option value="Unsatisfied">Unsatisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Very_Satisfied">Very Satisfied</option>
+                </select>
+               </div>
+
+               <div>
+                <label for="Recommend_product" >Recommend our product to others</label>
+                <select name="Recommend_product" id="Recommend_product">
+                    <option value="Default">Select your ratings</option>
+                    <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                    <option value="Unsatisfied">Unsatisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Very_Satisfied">Very Satisfied</option>
+                </select>
+               </div>
+
+               <div>
+                <label for="Recommend_company" >Recommend our company to others</label>
+                <select name="Recommend_company" id="Recommend_company">
+                    <option value="Default">Select your ratings</option>
+                    <option value="Very_Unsatisfied">Very Unsatisfied</option>
+                    <option value="Unsatisfied">Unsatisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Very_Satisfied">Very Satisfied</option>
+                </select>
+               </div>
+
+           </div>
+
+       </div>
+       <div class="ratingPara">
+        <p>
+            Additional comments or suggestions
+        </p>
+        <textarea name="comments" id="comments" class="commentsBox"></textarea>
+       </div >
+       <div class="submit">
+        <input type="submit">
+       </div>
+           
+        </form>
+    </div>
+</body>
+</html>

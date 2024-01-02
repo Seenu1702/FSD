@@ -1,0 +1,116 @@
+*{
+    font-family: 'Mona-Sans', sans-serif;
+}
+
+
+/* heading */
+body{
+    margin: 0%;
+    background-color: #cad2c5;  
+    }
+.heading{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   color: #f6feff;
+   background-color: #2f3d46;
+   padding: 1% 1%;
+   
+}
+.heading i{
+
+    font-size: 2.5em;
+    color:white;
+    align-self: center;
+    padding-left: 2%;
+    
+}
+.heading h2{
+    flex: 1;
+   text-align: center;
+}
+
+/* body */
+.bodySpace{
+    display: flex;
+}
+.bodySpace{
+    display: grid;
+    justify-content: center;
+    width: 90%;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 3%;
+    margin-left: 5%;
+    gap: 10%;
+    
+}
+.sideBox{
+    background-color: #353535;
+
+gap: 20px;
+border-radius: 1em;
+
+}
+.contentBox{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2.5fr 2.5fr;
+  
+}
+.firstRowBox{
+    margin: 2% 15% 2%;
+    display: grid;
+grid-column: span 3;
+border-radius: 1em;
+background-color: #353535;
+
+
+}
+.search{
+    background-color: #353535;
+    border-radius: 1em;
+    padding: 20px;
+    color: #cad2c5;
+}
+
+
+.thirdRowBox{
+    margin-top: 10%;
+   display: grid;
+   grid-column: span 3;
+   background-color:#353535;
+   border-radius: 1em;
+}
+.secondRow{
+    margin-top: 10%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10%;
+}
+
+
+.secondRowBox1{
+    display: grid;
+
+   background-color: #353535;
+   border-radius: 1em;
+}
+
+.secondRowBox2{
+    background-color: #353535;
+    border-radius: 1em;
+    
+}
+
+.secondRowBox3{
+    background-color: #353535;
+    border-radius: 1em;
+}
+
+@media(min-width: 576px){
+    .bodySpace{
+
+        display: grid;
+   
+    }
+}
